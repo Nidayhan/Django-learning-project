@@ -1,0 +1,33 @@
+:root {
+  --scale: 24px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #f3f4f6;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.wrap {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+canvas {
+  image-rendering: pixelated;
+  width: calc(16 * var(--scale));
+  height: calc(16 * var(--scale));
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-top: 10px;
+}
